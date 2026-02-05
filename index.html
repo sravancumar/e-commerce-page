@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Footware</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+       <div class="logo">Footware</div>
+        <div class="search-bar">
+            <input type="text" placeholder="Search...">
+            <button>🔍</button>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">New Arrivals</a></li>
+                <li><a href="#">Brands</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="product-container">
+        <div class="product-gallery">
+            <img id="main-image" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSsfSMAuDSKlOJmEpsyQQlTEz6N24JfEcOW7hTCese2i4wFnwO_WD-FJEmK-evzDnw8juf1JnrkVMYxJt_UkZ8ZYNYGdAEsZ9qkJjPjtFo" alt="Luxury Watch">
+            <div class="thumbnails">
+                <img onclick="changeImage('https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSsfSMAuDSKlOJmEpsyQQlTEz6N24JfEcOW7hTCese2i4wFnwO_WD-FJEmK-evzDnw8juf1JnrkVMYxJt_UkZ8ZYNYGdAEsZ9qkJjPjtFo')" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSsfSMAuDSKlOJmEpsyQQlTEz6N24JfEcOW7hTCese2i4wFnwO_WD-FJEmK-evzDnw8juf1JnrkVMYxJt_UkZ8ZYNYGdAEsZ9qkJjPjtFo" alt="Thumbnail 1">
+                <img onclick="changeImage('https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSzxGSJoPuncUHUWC2ATTRAyyFqwTpdGYmmKfi-JlmRETkOwDE0I4XOGUYrquwYViIOmEE4VHMMENTD63J7JsHF_HoL_RBDaT2gNooDQzwK045joQawZA')" src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcSzxGSJoPuncUHUWC2ATTRAyyFqwTpdGYmmKfi-JlmRETkOwDE0I4XOGUYrquwYViIOmEE4VHMMENTD63J7JsHF_HoL_RBDaT2gNooDQzwK045joQawZA" alt="Thumbnail 2">
+                <img onclick="changeImage('https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcStfKcPC-NPQnUJnKd5TOVr1V1YsJ-K7YW5gPEmzp_Dqb5jky-CJ_9QGpnf_eMtn20ImJGg0IwFW5dkJi0F8Scj7RGhjyDy1xynAHwfv8cMRu4Xs2CahKLbxJ4')" src="https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcStfKcPC-NPQnUJnKd5TOVr1V1YsJ-K7YW5gPEmzp_Dqb5jky-CJ_9QGpnf_eMtn20ImJGg0IwFW5dkJi0F8Scj7RGhjyDy1xynAHwfv8cMRu4Xs2CahKLbxJ4" alt="Thumbnail 3">
+                <img onclick="changeImage('https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ0LJZHHC3P6wDu5xT2dGccdu5_EG5VAPqiKmeIoI3z8Amlx3-6Ml6YwFmsNRmh302iRpSMSDHLBut5SoslFWZ4RSFff1cfLyJSxxnjWiSHgUJi6OdOw2biWEA')" src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcQ0LJZHHC3P6wDu5xT2dGccdu5_EG5VAPqiKmeIoI3z8Amlx3-6Ml6YwFmsNRmh302iRpSMSDHLBut5SoslFWZ4RSFff1cfLyJSxxnjWiSHgUJi6OdOw2biWEA" alt="Thumbnail 1">
+                <img onclick="changeImage('https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ2rv2_mLF5u1e5opaZB6VsalJ-9QzVWxPnTVpzFlqvNzTTIkkPQA1y1MQcGtEFWO4igdkgY1QjExyo7NfNyUOzGKfWynRul7AeXDIXuD60nHUaAuvvf7WyCQ')" src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ2rv2_mLF5u1e5opaZB6VsalJ-9QzVWxPnTVpzFlqvNzTTIkkPQA1y1MQcGtEFWO4igdkgY1QjExyo7NfNyUOzGKfWynRul7AeXDIXuD60nHUaAuvvf7WyCQ" alt="Thumbnail 2">
+                
+            </div>
+        </div>
+
+        <div class="product-details">
+            <h1>Formal Loafers</h1>
+            <p class="brand"></p>
+            <p class="price">
+                <span class="current-price">499.99</span>
+                <span class="old-price">799.99</span>
+                <span class="discount">38% OFF</span>
+            </p>
+            <p class="description">
+                </p>
+            
+            <!-- Ratings Section -->
+            <div class="ratings">
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <span class="star">⭐</span>
+                <p>Rated 4.8/5 (256 reviews)</p>
+            </div>
+            
+            <div class="quantity-selector">
+                <button onclick="decreaseQuantity()">-</button>
+                <input type="number" id="quantity" value="1" min="1">
+                <button onclick="increaseQuantity()">+</button>
+            </div>
+            <button class="add-to-cart">Add to Bag</button>
+
+            <!-- Promotional Section -->
+            <div class="promotion">
+                <h3>Limited-Time Offer!</h3>
+                <p>Get an additional 10% off your first purchase when you sign up for our newsletter.</p>
+                <button class="promo-btn">Sign Up Now</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>    
+        <p>&copy; 2024 Leathers. Crafted for Excellence.</p>
+    </footer>
+
+    <script>
+        function changeImage(imageSrc) {
+            document.getElementById('main-image').src = imageSrc;
+        }
+
+        function increaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            quantityInput.value = parseInt(quantityInput.value) + 1;
+        }
+
+        function decreaseQuantity() {
+            const quantityInput = document.getElementById('quantity');
+            if (parseInt(quantityInput.value) > 1) {
+                quantityInput.value = parseInt(quantityInput.value) - 1;
+            }
+        }
+    </script>
+</body>
+</html>
